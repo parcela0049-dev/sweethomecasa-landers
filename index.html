@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle-Secured Credit Line | Smart Finance Hub</title>
+<style>
+  :root{
+    --navy:#0f2144;
+    --navy-light:#1c3566;
+    --orange:#ff6a2b;
+    --orange-dark:#e2551a;
+    --cream:#faf7f2;
+    --gray:#5b6472;
+    --line:#e7e3db;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--navy);
+    background:var(--cream);
+    line-height:1.5;
+  }
+  img{max-width:100%;display:block;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px;}
+  a.cta-btn{
+    display:inline-block;
+    background:var(--orange);
+    color:#fff;
+    font-weight:600;
+    font-size:17px;
+    padding:16px 36px;
+    border-radius:8px;
+    text-decoration:none;
+    text-align:center;
+    transition:background .15s ease;
+  }
+  a.cta-btn:hover{background:var(--orange-dark);}
+  .fine{font-size:13px;color:var(--gray);margin-top:10px;}
+
+  header{padding:20px 0;border-bottom:1px solid var(--line);background:#fff;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--navy);}
+  .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--orange);}
+
+  .hero{padding:56px 0 48px;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);}
+  .hero h1{font-size:34px;line-height:1.2;margin:0 0 16px;max-width:640px;}
+  .hero p.sub{font-size:18px;color:var(--gray);max-width:560px;margin:0 0 28px;}
+  .hero .stat-bar{display:flex;gap:28px;margin-top:36px;flex-wrap:wrap;}
+  .hero .stat{font-size:14px;color:var(--gray);}
+  .hero .stat strong{display:block;font-size:22px;color:var(--navy);}
+
+  section{padding:52px 0;}
+  h2{font-size:26px;margin:0 0 28px;text-align:center;}
+
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media(max-width:640px){.compare{grid-template-columns:1fr;}}
+  .compare .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px;}
+  .compare .card h3{margin:0 0 14px;font-size:15px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray);}
+  .compare .card.now h3{color:var(--orange-dark);}
+  .compare ul{margin:0;padding-left:20px;}
+  .compare li{margin-bottom:10px;font-size:15px;}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media(max-width:700px){.steps{grid-template-columns:1fr;}}
+  .step{text-align:center;}
+  .step .num{
+    width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;margin:0 auto 14px;
+  }
+  .step h3{font-size:17px;margin:0 0 8px;}
+  .step p{font-size:14px;color:var(--gray);margin:0;}
+
+  .trust{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .trust-row{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:12px 0;}
+  .trust-rating{font-weight:700;font-size:18px;}
+  .trust-featured{text-align:center;color:var(--gray);font-size:13px;margin-top:6px;text-transform:uppercase;letter-spacing:.05em;}
+
+  .faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
+  .faq-item summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";float:right;color:var(--orange);font-size:20px;}
+  .faq-item[open] summary::after{content:"–";}
+  .faq-item p{color:var(--gray);margin:12px 0 0;font-size:15px;}
+
+  .final-cta{background:var(--navy);color:#fff;text-align:center;}
+  .final-cta h2{color:#fff;}
+  .final-cta p{color:#c7cfe0;max-width:520px;margin:0 auto 30px;}
+
+  footer{padding:34px 0;font-size:12px;color:var(--gray);}
+  footer p{margin:0 0 10px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap brand"><span class="dot"></span> Smart Finance Hub</div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Your Car Could Be Worth More Than a Loan Payment</h1>
+    <p class="sub">Yendo offers a credit line up to $10,000 based on the value of your car — not just your credit score. Checking your offer takes about a minute and does not affect your credit score.</p>
+    <a href="#" class="cta-btn" data-cta>Check My Offer</a>
+    <div class="fine">Free to check. No obligation to continue. Provided by Yendo — see full terms below.</div>
+    <div class="stat-bar">
+      <div class="stat"><strong>~1 min</strong>pre-approval decision</div>
+      <div class="stat"><strong>Up to $10,000</strong>credit line</div>
+      <div class="stat"><strong>1.5%</strong>unlimited cashback</div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-row">
+      <span class="trust-rating">★ 4.8 average rating</span><span style="color:var(--gray)">·</span><span>115k+ downloads</span>
+    </div>
+    <div class="trust-featured">As featured in Axios · Yahoo · Fortune · WSJ · NerdWallet · TechCrunch</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>What changes once your car is part of the equation</h2>
+    <div class="compare">
+      <div class="card before">
+        <h3>Relying on credit score alone</h3>
+        <ul>
+          <li>Approval depends mostly on credit history</li>
+          <li>Limited options if your score has taken a hit</li>
+          <li>Traditional bank loans can take days to process</li>
+        </ul>
+      </div>
+      <div class="card now">
+        <h3>With a vehicle-secured credit line</h3>
+        <ul>
+          <li>Your car's value plays the leading role</li>
+          <li>Pre-approval decision in about a minute</li>
+          <li>You keep driving your car the whole time</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Tell us about your car</h3>
+        <p>Year, make, model and mileage — that's what determines your available credit line.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Get your decision</h3>
+        <p>Most applicants get a pre-approval decision in about a minute, with no impact to their credit score.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Start using your card</h3>
+        <p>Once approved, you keep your car — Yendo places a lien on the title, not the keys.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Common questions</h2>
+
+    <details class="faq-item">
+      <summary>Will checking my offer affect my credit score?</summary>
+      <p>No. Checking your offer uses a soft inquiry and does not impact your credit score.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I need excellent credit to qualify?</summary>
+      <p>No. Because the credit line is based on your car's value, applicants with limited or less-than-perfect credit history may still qualify. Final approval and terms depend on Yendo's underwriting.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I have to give up my car?</summary>
+      <p>No. You keep driving your car as usual. Yendo places a lien on the vehicle's title, similar to how a car loan works — it does not take possession of the vehicle.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What does it cost?</summary>
+      <p>Yendo charges a $40 annual fee and interest only on the balance you actually use, with rates ranging from 24.88% to 35.88% APR based on creditworthiness. Full pricing details are shown by Yendo before you accept an offer.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2>See what your car could unlock</h2>
+    <p>Checking your offer is free, takes about a minute, and does not affect your credit score.</p>
+    <a href="#" class="cta-btn" data-cta>Check My Offer</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Advertising disclosure:</strong> Smart Finance Hub is an independent marketing partner and is not Yendo, a bank, or a lender. We may receive compensation if you apply through a link on this page. This page is for informational purposes and does not constitute financial advice. Approval, credit line amount and APR (24.88%–35.88%) are determined solely by Yendo based on its own underwriting criteria.</p>
+    <p>Not affiliated with or endorsed by Meta, Facebook or Instagram.</p>
+  </div>
+</footer>
+
+<script>
+  // This page sits BEFORE the tested RedTrack Click URL. Meta's ad Destination
+  // must point to THIS page's URL with the tracking macros appended as query
+  // params (see deployment notes). This script reads those params back out of
+  // the address bar and rebuilds the exact tested Click URL so every click on
+  // "Check My Offer" carries the same sub1-sub8 + utm attribution.
+  (function () {
+    var BASE_CLICK_URL = "https://trackrt.sweethomecasa.com/6aa6b93dbdd6b8b8d1b78533";
+    var PASSTHROUGH_KEYS = [
+      "sub1", "sub2", "sub3", "sub4", "sub5", "sub6", "sub7", "sub8",
+      "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"
+    ];
+
+    var incoming = new URLSearchParams(window.location.search);
+    var outgoing = new URLSearchParams();
+    PASSTHROUGH_KEYS.forEach(function (key) {
+      var val = incoming.get(key);
+      if (val) outgoing.set(key, val);
+    });
+
+    var finalUrl = outgoing.toString()
+      ? BASE_CLICK_URL + "?" + outgoing.toString()
+      : BASE_CLICK_URL;
+
+    document.querySelectorAll('[data-cta]').forEach(function (btn) {
+      btn.setAttribute('href', finalUrl);
+    });
+  })();
+</script>
+
+</body>
+</html>
