@@ -209,31 +209,16 @@
 </footer>
 
 <script>
-  // This page sits BEFORE the tested RedTrack Click URL. Meta's ad Destination
-  // must point to THIS page's URL with the tracking macros appended as query
-  // params (see deployment notes). This script reads those params back out of
-  // the address bar and rebuilds the exact tested Click URL so every click on
-  // "Check My Offer" carries the same sub1-sub8 + utm attribution.
+  // This page is the RedTrack Landing (LANDING > OFFER mode) for campaign
+  // 6aa6b93dbdd6b8b8d1b78533. RedTrack sets its click-id cookie when it
+  // redirects the visitor here from the campaign URL, so the CTA must point
+  // to the tracking domain's generic /click endpoint (not the campaign URL
+  // itself, which would just redirect back here and loop) — same pattern
+  // used by the Bathroom lander's Yes/No buttons.
   (function () {
-    var BASE_CLICK_URL = "https://trackrt.sweethomecasa.com/6aa6b93dbdd6b8b8d1b78533";
-    var PASSTHROUGH_KEYS = [
-      "sub1", "sub2", "sub3", "sub4", "sub5", "sub6", "sub7", "sub8",
-      "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"
-    ];
-
-    var incoming = new URLSearchParams(window.location.search);
-    var outgoing = new URLSearchParams();
-    PASSTHROUGH_KEYS.forEach(function (key) {
-      var val = incoming.get(key);
-      if (val) outgoing.set(key, val);
-    });
-
-    var finalUrl = outgoing.toString()
-      ? BASE_CLICK_URL + "?" + outgoing.toString()
-      : BASE_CLICK_URL;
-
+    var CLICK_URL = "https://trackrt.sweethomecasa.com/click";
     document.querySelectorAll('[data-cta]').forEach(function (btn) {
-      btn.setAttribute('href', finalUrl);
+      btn.setAttribute('href', CLICK_URL);
     });
   })();
 </script>
