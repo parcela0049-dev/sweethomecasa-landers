@@ -132,21 +132,11 @@
 <body>
 
 <!-- RedTrack universal script (Home Service, "click support - for affiliates") -->
-<script src="https://trackrt.sweethomecasa.com/unilpclick.js?attribution=lastpaid&cookiedomain=&cookieduration=90&defaultcampaignid=&regviewonce=false&script_id=6a9dfbc2659890b0b77ef49d"></script>
+<script async src="https://trackrt.sweethomecasa.com/unilpclick.js?attribution=lastpaid&cookiedomain=&cookieduration=90&defaultcampaignid=&regviewonce=false&script_id=6a9dfbc2659890b0b77ef49d"></script>
 
-<!-- Meta Pixel base code (Bathroom24h 2026 dataset, shared across Home Service vertical) -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4708218172740754');
-fbq('track', 'PageView');
-</script>
+<!-- Meta Pixel (browser-side) removed 2026-09-28: only sent PageView (not the real Lead event, which already
+     arrives via RedTrack's server-side CAPI independent of the browser) and was the main cause of the page's
+     3-5s load time (connect.facebook.net + unpkg.com + an unidentified capig.datah04.com gateway). -->
 
 <div class="hero">
   <img class="hero-img" src="bg-bright-room.webp" alt="Bright room with large windows">
